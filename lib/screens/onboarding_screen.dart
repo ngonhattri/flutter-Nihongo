@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:dacn/utilities/styles.dart';
 import 'package:dacn/screens/login_screen.dart';
-import 'dart:async';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:dacn/screens/home_screen.dart' as prefix0;
 
 class OnboardingScreen extends StatefulWidget {
   @override
@@ -84,7 +83,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 Container(
                   alignment: Alignment.centerRight,
                   child: FlatButton(
-                    onPressed: () => print('Bỏ qua'),
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(
+                           builder: (context) => prefix0.Tab(),
+                         ));
+                    },
                     child: Text(
                       'Bỏ qua',
                       style: TextStyle(
