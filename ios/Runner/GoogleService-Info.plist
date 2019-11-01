@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>162089560048-rd0rue7b52hksr9smg84oektaidvnblu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.162089560048-rd0rue7b52hksr9smg84oektaidvnblu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA6o9l6N47HaDtXahfszQKssAoWB6k-WOc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>162089560048</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ngonhattri.dacn</string>
+	<key>PROJECT_ID</key>
+	<string>doanchuyennganh-f2b88</string>
+	<key>STORAGE_BUCKET</key>
+	<string>doanchuyennganh-f2b88.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:162089560048:ios:4b958f6561d3da0a89df35</string>
+	<key>DATABASE_URL</key>
+	<string>https://doanchuyennganh-f2b88.firebaseio.com</string>
+</dict>
+</plist>
