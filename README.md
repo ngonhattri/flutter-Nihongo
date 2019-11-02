@@ -1,6 +1,6 @@
-# dacn
+# Đồ Án Chuyên Ngành 
 
-A new Flutter project.
+App học kanji + từ điển kanji
 
 ## Getting Started
 
