@@ -183,7 +183,7 @@ class _LoginPageState extends State<LoginPage> {
     authBloc.signIn(email, pass, () {
       LoadingDialog.hideLoadingDialog(context);
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => prefix0.Tab()));
+          .push(MaterialPageRoute(builder: (context) => prefix0.MainScreen()));
     }, (msg) {
       LoadingDialog.hideLoadingDialog(context);
       MsgDialog.showMsgDialog(context, "Lỗi đăng nhập", msg);

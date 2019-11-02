@@ -182,7 +182,7 @@ class _RegisterPageState extends State<RegisterPage> {
           _phoneController.text, _nameController.text, () {
         LoadingDialog.hideLoadingDialog(context);
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => prefix0.Tab()));
+            context, MaterialPageRoute(builder: (context) => prefix0.MainScreen()));
       }, (msg) {
         LoadingDialog.hideLoadingDialog(context);
         MsgDialog.showMsgDialog(context, "Lỗi đăng ký", msg);

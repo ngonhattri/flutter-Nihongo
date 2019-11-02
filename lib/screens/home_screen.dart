@@ -1,33 +1,44 @@
 import 'package:flutter/material.dart';
-import 'package:dacn/widgets/placeholder_widget.dart';
+import 'package:dacn/screens/tab/analys.dart';
+import 'package:dacn/screens/tab/dict.dart';
+import 'package:dacn/screens/tab/profile.dart';
+import 'package:dacn/screens/tab/home.dart';
+import 'package:dacn/screens/tab/hint.dart';
 
-class Tab extends StatefulWidget {
+class MainScreen extends StatefulWidget {
 
  @override
- State<StatefulWidget> createState() {
-    return _TabState();
-  }
+ _MainScreenState createState() => _MainScreenState();
+  
 }
-class _TabState extends State<Tab> {
-  int _currentIndex = 0;
-  final List<Widget> _children = [
-  PlaceholderWidget(Colors.red),
-  PlaceholderWidget(Colors.deepOrange),
-  PlaceholderWidget(Colors.green),
-  PlaceholderWidget(Colors.red),
-  PlaceholderWidget(Colors.blue)
-  ];
+class _MainScreenState extends State<MainScreen> {
+  int _page = 0;
+  PageController _pageController;
+
+
  @override
  Widget build(BuildContext context) {
    return Scaffold(
      
-     body: _children[_currentIndex],
+     body: PageView(
+        physics: NeverScrollableScrollPhysics(),
+        controller: _pageController,
+        onPageChanged: onPageChanged,
+        children: <Widget>[
+          Home(),
+          Analys(),
+          Dict(),
+          Hint(),
+          Profile(),
+        ],
+      ),
+
      bottomNavigationBar: BottomNavigationBar(
        backgroundColor: Colors.red,
        unselectedItemColor: Colors.blueGrey[200],
-       fixedColor: Colors.lightBlue[300],
-       onTap: onTabTapped,
-       currentIndex: _currentIndex,
+       fixedColor: Colors.purple,
+       onTap: navigationTapped,
+       currentIndex: _page,
        
        items: [
          BottomNavigationBarItem(
@@ -54,9 +65,26 @@ class _TabState extends State<Tab> {
      ),
    );
  }
- void onTabTapped(int index) {
-   setState(() {
-     _currentIndex = index;
-   });
- }
+
+  void navigationTapped(int page) {
+    _pageController.jumpToPage(page);
+  }
+
+ @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(initialPage: 0);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _pageController.dispose();
+  }
+
+ void onPageChanged(int page) {
+    setState(() {
+      this._page = page;
+    });
+  }
 }

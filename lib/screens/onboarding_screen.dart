@@ -85,7 +85,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: FlatButton(
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(
-                           builder: (context) => prefix0.Tab(),
+                           builder: (context) => prefix0.MainScreen(),
                          ));
                     },
                     child: Text(
