@@ -32,7 +32,7 @@ class SearchAppBarState extends State<SearchAppBar> {
          
           return AppBar(
             iconTheme: IconThemeData(color: Colors.black),
-            title: Text("kanji", style: TextStyle(color: Colors.white)),
+            title: Text("Từ điển hán tự", style: TextStyle(color: Colors.white)),
             backgroundColor: Colors.red,
             actions: <Widget>[
               IconButton(
@@ -46,7 +46,7 @@ class SearchAppBarState extends State<SearchAppBar> {
 
         return AppBar(
           iconTheme: IconThemeData(color: Colors.black),
-          title: Text("kanji", style: TextStyle(color: Colors.white)),
+          title: Text("Từ điển hán tự", style: TextStyle(color: Colors.white)),
           backgroundColor: Colors.purple,
           bottom: PreferredSize(
             child: SearchBar(widget.onSearch, widget.onClear, Colors.white),

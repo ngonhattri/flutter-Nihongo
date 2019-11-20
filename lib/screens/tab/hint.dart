@@ -1,12 +1,12 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:dacn/tip/tips_screen.dart';
 
 class Hint extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(
-      child: Center(
-        child: Text("Hint Page"),
-      ),
+    return MaterialApp(
+      home: Tips(),
     );
   }
 }
