@@ -37,18 +37,18 @@ class _RegisterPageState extends State<RegisterPage> {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 140,
+                height: 100,
               ),
               new StakedIcons(),
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 20, 0, 6),
                 child: Text(
-                  "App học hán tự",
+                  "Ứng dụng luyện viết tiếng Nhật",
                   style: TextStyle(fontSize: 22, color: Color(0xff333333)),
                 ),
               ),
               Text(
-                "Đăng ký đơn giản chỉ với vài ",
+                "Đăng ký đơn giản chỉ với vài bước",
                 style: TextStyle(fontSize: 16, color: Color(0xff606470)),
               ),
               Padding(

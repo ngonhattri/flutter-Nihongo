@@ -45,6 +45,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       
       body: Container(
+
         padding: EdgeInsets.fromLTRB(30, 0, 30, 0),
         constraints: BoxConstraints.expand(),
         color: Colors.white,
@@ -53,7 +54,26 @@ class _LoginPageState extends State<LoginPage> {
             
             children: <Widget>[
               SizedBox(
-                height: 140,
+                height: 50,
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                child: FlatButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => prefix0.MainScreen(),
+                        ));
+                  },
+                  child: Text(
+                    'Bỏ qua',
+                    style: TextStyle(
+                      color: Colors.blueAccent,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
               ),
               //Image.asset('ic_car_green.png'),
               new StakedIcons(),
@@ -114,41 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
-                child: SizedBox(
-                  width: double.infinity,
-                  height: 52,
-                  child: RaisedButton(
-                    onPressed: _handleSignIn,
-                    child: Text(
-                      "Đăng nhập google",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                    color: Color(0xFFDF513B),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(6))),
-                  ),
-                ),
-              ),
-             Padding(
-                padding: const EdgeInsets.fromLTRB(0, 15, 0, 100),
-                child: SizedBox(
-                  width: double.infinity,
-                  height: 52,
-                  child: RaisedButton(
-                    onPressed: _handleSignIn,
-                    child: Text(
-                      "Đăng nhập Facebook",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                    color: Color(0xFF4364A1),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(6))),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 0, 0, 40),
+                padding: const EdgeInsets.fromLTRB(0, 40, 0, 40),
                 child: RichText(
                   text: TextSpan(
                       text: "Bạn là người mới? ",

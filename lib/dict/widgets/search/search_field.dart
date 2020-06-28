@@ -23,7 +23,7 @@ class _SearchFieldState extends State<SearchField> {
     return TextField(
       textInputAction: TextInputAction.search,
       controller: _controller,
-      style: TextStyle(fontSize: 19, fontFamily: "DroidJP"),
+      style: TextStyle(fontSize: 19, fontFamily: "Montserrat"),
       decoration: InputDecoration(
         hintText: "Tìm kiếm hán tự...",
         border: InputBorder.none,

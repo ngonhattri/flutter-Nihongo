@@ -100,7 +100,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                 ),
                 Container(
-                  height: 600.0,
+                  height: 480.0,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
                     controller: _pageController,
@@ -121,13 +121,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   image: AssetImage(
                                     'assets/images/onboarding0.png',
                                   ),
-                                  height: 300.0,
-                                  width: 300.0,
+                                  height: 200.0,
+                                  width: 200.0,
                                 ),
                               ),
                               SizedBox(height: 30.0),
                               Text(
-                                'Ứng dụng\nnhận diện chữ viết tay',
+                                'Ứng dụng luyện tập\nViết chữ tiếng Nhật',
                                 style: kTitleStyle,
                               ),
                               SizedBox(height: 30.0),
@@ -150,8 +150,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   image: AssetImage(
                                     'assets/images/onboarding1.png',
                                   ),
-                                  height: 300.0,
-                                  width: 300.0,
+                                  height: 200.0,
+                                  width: 200.0,
                                 ),
                               ),
                               SizedBox(height: 20.0),
@@ -179,8 +179,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   image: AssetImage(
                                     'assets/images/onboarding2.png',
                                   ),
-                                  height: 300.0,
-                                  width: 300.0,
+                                  height: 200.0,
+                                  width: 200.0,
                                 ),
                               ),
                               SizedBox(height: 20.0),

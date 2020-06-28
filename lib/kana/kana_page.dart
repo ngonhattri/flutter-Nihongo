@@ -20,6 +20,7 @@ class KanaPage extends StatefulWidget{
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: new ThemeData(
           primaryColor: Colors.purple, //Changing this will change the color of the TabBar
         ),
